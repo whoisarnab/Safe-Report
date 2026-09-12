@@ -1,4 +1,4 @@
-# SAFEREPORT AI 🚨
+# Safe-Report AI 🚨
 ### AI-Powered Public Safety Detection, Prioritization & Emergency Response Platform
 
 **Hackathon Project**
