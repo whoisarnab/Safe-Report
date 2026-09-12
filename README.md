@@ -1,378 +1,369 @@
-# Safe-Report AI 🚨
-### AI-Powered Public Safety Detection, Prioritization & Emergency Response Platform
+# SafeReport 🚨
 
-**Hackathon Project**
+### A Simple Emergency Incident Reporting Web Application
 
 🌐 **Live Demo:** https://quick-aid-alert.lovable.app/
 
 ---
 
-## 🧠 Problem Statement
+## 📌 About the Project
 
-Public safety incidents can develop rapidly while authorities must simultaneously understand **what happened, how urgent it is, where it occurred, and which resources should respond**.
+**SafeReport** is a web-based emergency reporting application designed to make it quick and simple for a user to report a public-safety incident.
 
-**SAFEGRID AI** is an AI-powered public safety intelligence and response platform designed to transform incoming incident reports into actionable operational information.
+The application focuses on the first and most important step of emergency response: **clearly identifying what type of incident is being reported**.
 
-### Core workflow
-
-**Detect → Classify → Locate → Prioritize → Coordinate → Resolve**
+The current application presents users with a straightforward emergency-reporting interface where they can choose the relevant incident category.
 
 ---
 
-## 🚀 Key Features
+## 🎯 Problem Statement
 
-- 🤖 **AI Incident Classification** — identifies the likely type of public-safety incident.
-- 🧠 **AI Severity & Urgency Scoring** — assigns a 0–100 priority score and Critical/High/Medium/Low level.
-- 📍 **Location Intelligence** — associates incidents with reported/GPS locations.
-- 🗺️ **Live Incident Map** — geographic view of active incidents.
-- 🚨 **AI Priority Queue** — ranks incidents according to urgency and potential impact.
-- 🚑 **Resource Coordination** — coordinates simulated ambulance, police, fire and rescue units.
-- 🔄 **Incident Lifecycle** — Reported → AI Analyzing → Verified → Dispatched → On Scene → Resolved.
-- 🧩 **Duplicate & Multi-Report Correlation** — combines reports that may describe the same event.
-- 🎤 **Multimodal Intake** — interfaces for text, voice, image and video reports.
-- 🏥 **Hospital Capacity** — emergency beds, ICU and ventilator availability.
-- 💬 **AI Operations Copilot** — command-center decision support.
-- 📊 **Safety Analytics** — incident trends, response metrics and resolution statistics.
-- 🔥 **Risk & Hotspot Intelligence** — highlights areas with elevated activity.
-- 🔴 **SOS Workflow** — one-tap emergency demonstration flow.
-- 🎭 **Simulation Mode** — complete demo without connecting to real emergency infrastructure.
+> **Develop an AI-powered system that can detect and classify public safety incidents, determine their urgency and location, and help authorities prioritize and coordinate appropriate responses.**
+
+SafeReport is the reporting interface developed as part of this broader public-safety solution.
+
+The current version focuses primarily on **incident reporting and classification by incident type**, providing a simple starting point for the emergency-response workflow.
 
 ---
 
-## 🎯 Innovation
+## 🚨 Current Incident Categories
 
-Traditional emergency reporting mainly answers:
+The live application currently provides five reporting categories:
 
-> **“How can someone report an incident?”**
-
-SAFEGRID AI goes further:
-
-> **“What is happening, how urgent is it, where is it, what resources are needed, and what should the response team consider next?”**
-
-The platform is designed as an **AI-assisted decision-support layer**, not a replacement for trained emergency personnel.
-
----
-
-## 🏗️ System Architecture
-
-```text
-Citizen / Voice / Image / Video / Sensors
-                  │
-                  ▼
-          AI Incident Intake
-                  │
-                  ▼
-       Incident Classification
-                  │
-                  ▼
-       Severity & Urgency Engine
-                  │
-                  ▼
-          Location Intelligence
-                  │
-                  ▼
-       Duplicate / Correlation AI
-                  │
-                  ▼
-          AI Priority Queue
-                  │
-                  ▼
-        Response Recommendation
-                  │
-                  ▼
-       Resource / Dispatch Layer
-             │     │     │
-             ▼     ▼     ▼
-          Police  Fire  Medical
-                  │
-                  ▼
-          Incident Resolution
-                  │
-                  ▼
-       Analytics & Safety Insights
-```
-
----
-
-## 🚨 Incident Priority Model
-
-| Score | Priority | Suggested Meaning |
-|---:|---|---|
-| 76–100 | 🔴 Critical | Immediate / multi-agency attention |
-| 51–75 | 🟠 High | Urgent response |
-| 26–50 | 🟡 Medium | Local response / follow-up |
-| 0–25 | 🟢 Low | Monitor / routine response |
-
-The score is intended as decision support and should be reviewed by authorized personnel before real-world action.
-
----
-
-## 📍 Supported Incident Types
-
-- 🔥 Fire
-- 🚑 Medical Emergency
-- 🚗 Road Accident
-- 👮 Crime / Public Disturbance
-- 🌊 Flood / Waterlogging
-- 🏚️ Structural Collapse
-- ⚠️ Other Public Safety Incidents
-
----
-
-## 🖥️ Command Center
-
-The command dashboard provides:
-
-- Critical and high-priority incident counts
-- Live incident map
-- AI-ranked priority queue
-- Responder readiness
-- AI situation brief
-- Incident status
-- Resource availability
-- Emergency operations Copilot
-
----
-
-## 🧩 AI Incident Correlation
-
-Multiple citizens may report the same event.
-
-```text
-Report A → “Fire near Central Market”
-Report B → “Heavy smoke at Central Market”
-Report C → “People evacuating Central Market”
-                    │
-                    ▼
-            AI Correlation Layer
-                    │
-                    ▼
-             ONE INCIDENT
-```
-
-This reduces duplicate operational records and gives responders a consolidated situation picture.
-
----
-
-## 🚑 Resource Coordination
-
-SAFEGRID AI represents emergency resources such as:
-
-```text
-🚑 Ambulances
-👮 Police Units
-🚒 Fire Units
-🛟 Rescue Units
-🏥 Hospitals
-```
-
-The system can display availability, distance, ETA and recommended response combinations.
-
----
-
-## 💬 AI Operations Copilot
-
-Command operators can ask:
-
-- “What is our highest-priority incident?”
-- “How many ambulances are available?”
-- “Which incident should we respond to first?”
-- “What resources are recommended?”
-
-The Copilot provides decision support while keeping final operational decisions with authorized human personnel.
-
----
-
-## 🎭 Hackathon Demo Flow
-
-### 1. Citizen Report
-
-> “Heavy smoke and fire near Central Market. People are evacuating.”
-
-### 2. AI Analysis
-
-```text
-Type: Fire
-Priority: Critical
-AI Confidence: High
-Potential Impact: High
-```
-
-### 3. Location
-
-The incident appears on the command-center map.
-
-### 4. Correlation
-
-Additional reports from the same area are associated with the existing incident.
-
-### 5. Prioritization
-
-The incident moves to the top of the AI priority queue.
-
-### 6. Response Recommendation
-
-```text
-🚒 Fire Response
-🚑 Ambulance Support
-👮 Police / Traffic Control
-```
-
-### 7. Responder Coordination
-
-Units progress through:
-
-```text
-AVAILABLE → EN ROUTE → ON SCENE → RESOLVED
-```
-
-### 8. Analytics
-
-Response time and incident information become available for operational analysis.
-
----
-
-## 🏆 Alignment With the Hackathon Problem
-
-| Hackathon Requirement | SAFEGRID AI |
+| Incident Type | Purpose |
 |---|---|
-| Detect incidents | AI incident intake |
-| Classify incidents | AI classification |
-| Determine urgency | AI severity score |
-| Determine location | Location intelligence + map |
-| Prioritize response | AI priority queue |
-| Coordinate response | Resource and responder coordination |
-| Help authorities | Command center + AI Copilot |
-| Improve awareness | Correlation + live map |
-| Measure response | Analytics |
+| 🔥 **Fire** | Report a fire-related emergency |
+| 🚑 **Medical** | Report a medical emergency |
+| 👮 **Crime / Violence** | Report crime or violence-related incidents |
+| 🚗 **Accident** | Report a road or other accident |
+| ⚠️ **Other** | Report an incident that does not fit the available categories |
+
+The live interface asks:
+
+> **“What's happening?”**
+
+and instructs the user to select the type of incident they need to report. citeturn1view0
 
 ---
 
-## 🛠️ Technology Stack
+## 💡 Why This Approach?
 
-### Frontend
-- React
-- TypeScript
-- Vite
-- Tailwind CSS
-- Lucide Icons
-- Recharts
+During an emergency, users should not have to navigate through a complicated interface.
 
-### Backend / Data
-- Supabase
-- PostgreSQL
-- Supabase Realtime
-- Authentication
-- Row Level Security
-
-### AI Layer
-Designed for integration with AI models for:
-- Text classification
-- Image/video understanding
-- Severity assessment
-- Report summarization
-- Incident correlation
-- Response recommendations
-
-### Mapping
-Designed for GIS/map integration for:
-- Incident locations
-- Responder locations
-- Hospitals
-- Distance/ETA
-- Safety hotspots
-
----
-
-## 🔐 Responsible AI & Safety
-
-SAFEGRID AI is a **hackathon decision-support prototype**.
-
-- AI recommendations should be reviewed by authorized personnel.
-- AI confidence should be visible to operators.
-- The prototype does not directly control real emergency infrastructure.
-- Demonstration data is not live emergency-service data.
-- Production deployment would require appropriate security, privacy, reliability testing, audit logging and authorization.
-
-**For real emergencies, contact the appropriate official emergency service.**
-
----
-
-## 🌐 Live Demo
-
-**Hosted application:**  
-https://quick-aid-alert.lovable.app/
-
----
-
-## 💻 Local Development
-
-### Requirements
-- Node.js 18+
-- npm
-
-### Installation
-
-```bash
-git clone <your-github-repository-url>
-cd quick-aid-alert
-npm install
-npm run dev
-```
-
-Open the local URL provided by Vite, usually:
+SafeReport therefore keeps the first interaction simple:
 
 ```text
-http://localhost:5173
+Open SafeReport
+      ↓
+Identify the emergency
+      ↓
+Select incident type
+      ↓
+Continue with the reporting process
+```
+
+The goal is to reduce friction during the initial incident-reporting step.
+
+---
+
+## 🖥️ Current Application
+
+The current hosted application provides:
+
+- A dedicated **SafeReport** interface
+- Emergency incident selection
+- Fire reporting
+- Medical reporting
+- Crime / Violence reporting
+- Accident reporting
+- Other incident reporting
+- A sign-in entry point
+- A minimal, emergency-focused user experience citeturn1view0
+
+### Live Application
+
+**https://quick-aid-alert.lovable.app/**
+
+---
+
+## 🧠 Relationship to the Hackathon Problem
+
+The hackathon problem describes a complete public-safety intelligence and response pipeline:
+
+```text
+Incident
+   ↓
+Detection
+   ↓
+Classification
+   ↓
+Urgency
+   ↓
+Location
+   ↓
+Prioritization
+   ↓
+Coordination
+   ↓
+Response
+```
+
+The current SafeReport application primarily addresses the **incident reporting and basic classification entry point**.
+
+This makes it the foundation on which the larger AI-powered public-safety system can be developed.
+
+---
+
+## 🏗️ Proposed System Evolution
+
+The current reporting interface can be extended into a complete AI-powered public-safety platform.
+
+### Phase 1 — Current Application
+
+```text
+Citizen
+   ↓
+SafeReport
+   ↓
+Incident Category
+```
+
+### Phase 2 — AI Intelligence
+
+```text
+Citizen Report
+      ↓
+AI Classification
+      ↓
+Incident Type
+      ↓
+Urgency Score
+      ↓
+AI Confidence
+```
+
+### Phase 3 — Location Intelligence
+
+```text
+Incident
+   ↓
+GPS / Reported Location
+   ↓
+Incident Map
+   ↓
+Nearest Response Resources
+```
+
+### Phase 4 — Command Center
+
+```text
+Multiple Reports
+       ↓
+Incident Correlation
+       ↓
+Priority Queue
+       ↓
+Command Dashboard
+       ↓
+Response Coordination
+```
+
+### Phase 5 — Full Response Platform
+
+```text
+Citizen
+   ↓
+AI Detection & Classification
+   ↓
+Urgency + Location
+   ↓
+Priority Engine
+   ↓
+Police / Fire / Medical
+   ↓
+Incident Resolution
+   ↓
+Analytics
 ```
 
 ---
 
-## 🔧 Environment Variables
+## 🤖 Planned AI Capabilities
 
-For Supabase integration, create `.env.local`:
+The following capabilities represent the planned direction of the project rather than features currently exposed by the live application:
 
-```env
-VITE_SUPABASE_URL=your_supabase_project_url
-VITE_SUPABASE_PUBLISHABLE_KEY=your_supabase_publishable_key
+### AI Incident Classification
+
+Automatically classify incoming descriptions, images or other signals into categories such as:
+
+- Fire
+- Medical emergency
+- Accident
+- Crime / violence
+- Other public-safety incidents
+
+### AI Urgency Assessment
+
+Estimate whether an incident should be treated as:
+
+```text
+🔴 Critical
+🟠 High
+🟡 Medium
+🟢 Low
 ```
 
-Never expose a Supabase service-role/secret key in frontend code.
+### Location Intelligence
+
+Use GPS or reported location information to determine where an incident occurred.
+
+### Incident Prioritization
+
+Rank multiple active incidents so emergency operators can focus on the highest-priority events first.
+
+### Incident Correlation
+
+Identify multiple reports that may refer to the same real-world event.
+
+### Response Recommendation
+
+Recommend potentially relevant emergency resources such as:
+
+```text
+🚑 Medical response
+🚒 Fire response
+👮 Police response
+```
+
+These capabilities are the proposed extension of the current reporting application and should not be interpreted as already implemented in the hosted version.
+
+---
+
+## 🏆 Hackathon Vision
+
+The vision is to evolve SafeReport from a **simple emergency reporting interface** into an **AI-assisted public-safety coordination platform**.
+
+### Current
+
+> **Report an emergency.**
+
+### Target
+
+> **Detect the incident → Understand it → Determine urgency → Locate it → Prioritize it → Coordinate the response.**
+
+---
+
+## 🛠️ Technology
+
+The project is built as a modern web application using the Lovable development workflow.
+
+The repository is connected to GitHub for source-code management and continued development.
+
+The project can be extended with:
+
+- React / TypeScript
+- Supabase
+- AI APIs
+- Geolocation services
+- Interactive maps
+- Real-time updates
+- Emergency resource management
+
+---
+
+## 🔐 Responsible Use
+
+This project is a **hackathon prototype**.
+
+It is not a replacement for official emergency services.
+
+AI-generated classifications and recommendations should be treated as decision-support information and verified by authorized personnel before any real-world emergency action.
+
+For an actual emergency, contact the appropriate official emergency service.
 
 ---
 
 ## 🔮 Future Scope
 
-- Real-time CCTV event detection
-- Computer vision for fire, accidents and crowd incidents
-- Speech-to-text emergency reporting
-- Real-time responder GPS
-- Traffic-aware ETA prediction
-- Predictive safety-risk mapping
-- Weather and environmental risk integration
-- Hospital API integration
-- Offline-first emergency reporting
-- Multi-agency communication
-- Multilingual citizen reporting
-- Advanced GIS analytics
-- Production-grade authentication and audit trails
+The project can be expanded with:
+
+1. **AI-powered text classification**
+2. **Image and video incident analysis**
+3. **Voice-based emergency reporting**
+4. **Automatic urgency scoring**
+5. **GPS-based location capture**
+6. **Live incident map**
+7. **Authority command dashboard**
+8. **Police / Fire / Ambulance coordination**
+9. **Nearest responder identification**
+10. **Hospital availability**
+11. **Duplicate incident detection**
+12. **Multi-reporter incident correlation**
+13. **Real-time incident status**
+14. **Emergency response analytics**
+15. **AI command-center assistant**
+16. **Predictive public-safety risk analysis**
 
 ---
 
-## 📌 Project Status
+## 📊 Example Future Workflow
 
-**Hackathon Prototype / Demonstration**
+A future version could process a report such as:
 
-The current application demonstrates the command-center workflow, incident management experience and AI-assisted public safety concepts. Real emergency-service integrations and production AI inference require additional engineering, validation and authorization.
+> “There is a major accident near the highway and people are injured.”
+
+The system could transform it into:
+
+```text
+Incident Type
+    ↓
+ACCIDENT
+
+Urgency
+    ↓
+HIGH
+
+Potential Medical Assistance
+    ↓
+YES
+
+Location
+    ↓
+GPS / Reported Location
+
+Recommended Response
+    ↓
+🚑 Ambulance
+👮 Police
+🚧 Traffic Control
+```
+
+The final operational decision would remain with authorized responders.
+
+---
+
+## 🌐 Links
+
+**Live Application:**  
+https://quick-aid-alert.lovable.app/
+
+**GitHub Repository:**  
+https://github.com/butcher11223344-hub/quick-aid-alert
+
+---
+
+## 👥 Project Status
+
+**Hackathon Prototype**
+
+The currently hosted version focuses on the emergency-reporting interface and incident-category selection. The broader AI detection, urgency, location intelligence and coordinated-response capabilities described above represent the planned evolution of the project.
 
 ---
 
 ## ⭐ Vision
 
-> **See the incident. Understand the incident. Prioritize the incident. Coordinate the response.**
-
-SAFEGRID AI aims to move public safety technology from **reactive reporting** toward **intelligent situational awareness and coordinated response**.
+> **Make emergency reporting simple today, and build an intelligent public-safety response network tomorrow.**
 
 ---
 
-**Built for a hackathon focused on AI-powered public safety, emergency prioritization and coordinated response.**
+**Built as a hackathon project for AI-powered public safety incident detection, classification, prioritization and coordinated response.**
