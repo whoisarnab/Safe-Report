@@ -1,4 +1,4 @@
-# SAFEGRID AI 🚨
+# SAFEREPORT AI 🚨
 ### AI-Powered Public Safety Detection, Prioritization & Emergency Response Platform
 
 **Hackathon Project**
